@@ -9,24 +9,36 @@
     margin: 0;
     list-style: none;
 
-      @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       display: flex;
-      flex-wrap: wrap;
     }
+
+    //  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    //       width: 768px;
+    //  }
   }
 
   &__item {
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.5;
     padding: 40 32;
     width: 280px;
-    height: 412px;
     background: $color-white;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     margin-bottom: 20px;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      width: calc((100% - 60px) / 3);
-      margin-right: 32px;
+      font-size: 14px;
+      width: 224px;
+      margin: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      width: 368px;
+      margin: 16px;
     }
   }
 
@@ -48,10 +60,6 @@
   }
 
   &__type {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.84;
-    letter-spacing: 0.04em;
     color: $color-white;
     text-transform: uppercase;
   }
@@ -65,31 +73,16 @@
   }
 
   &__heading {
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.84;
     color: $text-dark;
   }
 
   &__day {
     margin-bottom: 6px;
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
     color: $text-dark;
   }
 
   &__text {
     margin-top: 8px;
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
     color: $text-light;
   }
 
@@ -109,26 +102,32 @@
 
   &__tel {
     margin-top: 24px;
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
     color: $text-light;
   }
 }
 
-.contacts__btn {
+.contacts-location {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 767px) {
+        display: flex;
+        justify-content: center;
+      }
+}
+
+.contacts__btn {
+  // display: flex;
+  // margin-left: auto;
+  // margin-right: auto;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 17px;
   cursor: pointer;
   margin-top: 32px;
-  width: 161.45px;
+  width: 162px;
   height: 44px;
   color: $color-white;
   border: 1px solid rgba(0, 0, 0, 0);
@@ -137,6 +136,7 @@
 
   &:not(last-child) {
     margin-top: 10px;
+
   }
 }
 
