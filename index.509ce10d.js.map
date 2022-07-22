@@ -1,0 +1,1 @@
+{"mappings":"AAAAA,EAAE,uBAAuBC,MAAM,CAC5BC,QAAQ,EACRC,MAAM","sources":["src/index.js"],"sourcesContent":["$('.reviews__container').slick({\n   arrows: false,\n   dots: true,\n});\n"],"names":["$","slick","arrows","dots"],"version":3,"file":"index.509ce10d.js.map"}
