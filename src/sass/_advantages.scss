@@ -1,0 +1,126 @@
+.advantages {
+   background-color: $color-bg-footer-advantages;
+
+}
+
+.advantages__list {
+   @media screen and (min-width: 768px) {
+      display: flex;
+   }
+
+   @media screen and (min-width: 1200px) {
+      // justify-content: space-between;
+      justify-content: flex-start;
+   }
+}
+
+.advantages__item {
+
+   @media screen and (max-width: 767px) {
+      max-width: 200px;
+   }
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 170px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      width: 288px;
+   }
+
+   &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+         margin-bottom: 32px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+         margin-right: 22px;
+      }
+
+      @media screen and (min-width: 1200px) {
+         margin-right: 132px;
+      }
+   }
+}
+
+.advantages__sub {
+   font-family: 'Titan One', sans-serif;
+   font-weight: 400;
+   text-transform: uppercase;
+
+   color: $text-brand;
+
+   @media screen and (max-width: 767px) {
+      margin-bottom: 4px;
+
+      font-size: 36px;
+      line-height: 41px;
+   }
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 13px;
+
+      font-size: 48px;
+      line-height: 55px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      margin-bottom: 16px;
+
+      font-size: 58px;
+      line-height: 66px;
+   }
+
+   &::before {
+      display: block;
+      content: '';
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 50px;
+      height: 50px;
+   }
+
+   &--icon1::before {
+      @media screen and (max-width: 767px) {
+         background-image: url(../img/04advantages/adv1mob.png);
+      }
+
+      @media screen and (min-width: 768px) {
+         background-image: url(../img/04advantages/adv1.png);
+      }
+
+   }
+
+   &--icon2::before {
+      background-image: url(../img/04advantages/adv2.png);
+   }
+
+   &--icon3::before {
+      background-image: url(../img/04advantages/adv3.png);
+   }
+}
+
+.advantages__text {
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 1.7;
+   letter-spacing: 0.02em;
+
+   color: #000000;
+
+   @media screen and (max-width: 767px) {
+      font-size: 12px;
+      line-height: 1.7;
+
+   }
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 14px;
+      line-height: 1.74;
+   }
+
+   @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.76;
+   }
+}
