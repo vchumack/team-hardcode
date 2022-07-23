@@ -6,13 +6,12 @@
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
-    margin: 0;
+    margin: -16px;
     list-style: none;
 
     @media screen and (min-width: 768px) {
       display: flex;
     }
-
   }
 
   &__item {
@@ -20,27 +19,25 @@
     font-size: 12px;
     line-height: 1.5;
     padding: 40 32;
-    // width: 280px;
     background: $color-white;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-
 
     &:not(:last-child) {
       margin-bottom: 20px;
     }
 
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 6 * 16px) / 3);
+      margin: 16px;
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       font-size: 14px;
-      // width: 224px;
-      margin: 16px;
     }
 
     @media screen and (min-width: 1200px) {
       font-size: 16px;
-      // width: 368px;
-      margin: 16px;
     }
   }
 
@@ -51,7 +48,6 @@
     background-color: $color-coffee-card;
     border-radius: 6px;
     padding: 4px 17px;
-
   }
 
   &__type--green {
@@ -86,7 +82,6 @@
     }
   }
 
-
   &__day {
     margin-top: 24px;
     color: $text-dark;
@@ -99,43 +94,33 @@
   &__time {
     margin-top: 7px;
     color: $text-secondary;
-
-      // @media screen and (min-width: 1200px) {
-      //   margin-top: 18px;
-      //   // color: $text-secondary;
-      // }
-    }
+  }
 
   &__add {
+    margin-top: 24px;
+    color: $text-light;
+
+    &:not(:last-child) {
       margin-top: 24px;
-      color: $text-light;
-
-      &:not(:last-child) {
-        margin-top: 24px;
-      }
-
-      @media screen and (min-width: 768px) {
-        margin-top: 32px;
-        color: $text-light;
-      }
     }
-  
+
+    @media screen and (min-width: 768px) {
+      margin-top: 32px;
+      color: $text-light;
+    }
+
+    &:hover,
+    &:focus {
+      color: $text-brand;
+    }
+  }
 
   &__btn {
     padding: 14px 35px;
     cursor: pointer;
-    color: $text-brand;
-    // color: $color-white;
-    // background-color: $text-brand;
     border: 1px solid rgba(0, 0, 0, 0);
-    background-color: $color-white;
     border-radius: 22px;
     margin-bottom: 10px;
-
-    // .contacts__btn:not(:last-child) {
-    //     margin-bottom: 10px;
-    //     // margin-right: 20px;
-    //   }
 
     @media screen and (min-width: 768px) {
       display: block;
@@ -143,10 +128,6 @@
       justify-content: center;
       align-items: center;
       margin-right: 14px;
-
-      // .contacts__btn:not(:last-child) {
-      //     margin-right: 14px;
-      //   }
     }
 
     @media screen and (min-width: 1200px) {
@@ -155,51 +136,49 @@
       justify-content: center;
       align-items: center;
       margin-right: 12px;
-
-      // .contacts__btn:not(:last-child) {
-      //   margin-right: 12px;
-      // }
-    }
-
-
-    &:hover,
-    &:focus {
-      color: $color-white;
-      background-color: $text-brand;
-
-      & .btn-svg {
-        stroke: $color-white;
-      }
     }
   }
 
-  // .contacts__btn--accent {
-  //   color: $color-white;
-  //   background-color: $text-brand;
-  // }
+  &__btn--accent {
+    color: $color-white;
+    background-color: $text-brand;
+  }
 
+  &__btn--notuse {
+    color: $text-brand;
+    background-color: $color-white;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(236, 235, 235, 1);
+    }
+  }
 }
 
- .btn-svg {
-   background-color: transparent;
-   stroke: $color-button-location;
-   fill: none;
-   margin-left: 8px;
-   margin-right: 2px;
- }
+.contacts-location {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 32px;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 
- .contacts-location {
-   display: flex;
-   margin: 0 auto;
-   margin-top: 32px;
-   justify-content: center;
-   flex-direction: column;
-   text-align: center;
-   align-items: center;
+  @media screen and (min-width: 767px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
-   @media screen and (min-width: 767px) {
-     display: flex;
-     flex-direction: row;
+.btn-svg {
+  background-color: transparent;
+  stroke: $text-brand;
+  fill: none;
+  margin-left: 8px;
+  margin-right: 2px;
+}
 
-   }
- }
+.btn-svg--accent {
+  stroke: $color-white;
+}
+
