@@ -1,0 +1,188 @@
+.footer {
+    background-color: $color-bg-footer-advantages;
+
+        &__container{
+            padding-bottom: 40px;
+        }
+    
+        &__box-text{
+            font-family: Titan One;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        &__text:first-child {
+            margin-bottom: 16px;
+            color: $text-secondary;
+    
+            @media screen and (max-width:767px) {
+                max-width: 240px;
+                font-size: 18px;
+                line-height: 1.16;
+    
+            }
+            
+        }
+    
+        &__text:nth-child(2) {
+            color: $text-brand;
+    
+            @media screen and (max-width:767px) {
+                max-width: 200px;
+                margin-bottom: 40px;
+                font-size: 34px;
+                line-height: 1.15;
+    
+            }
+    
+        
+            
+        }
+    
+        &__socials {
+            display: flex;
+            justify-content: flex-end;
+    
+            margin-bottom: 40px;
+
+            &-item:not(:last-child) {
+                    margin-right: 28px;
+                }
+
+            &-link{
+
+                    border-radius: 50%;
+                    background-color: $color-sociality;
+                    color: $color-white;
+                    width: 32px;
+                    height: 32px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: background-color $transition-duration $timing-function;
+                
+                &:hover,
+                &:focus {
+                        background-color:$text-brand;
+                        
+                }
+            }
+
+            &-icon {
+                fill: currentColor;
+                }
+
+            }
+        
+    
+        &__tel-text {
+            text-align: right;
+
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 1.86;
+
+        }
+
+        &__tel-link{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 186%;
+            color:$text-brand;
+        }
+    
+        &__copyright-box {
+            padding-top: 16px;
+            border-top: 1px solid $color-comma-line;
+            text-align: center;
+
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 152%;
+            color:$text-light;
+        }
+}
+
+@media screen  and( min-width:768px){
+    .footer {
+        &__box {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &-contacts{
+                    align-self: flex-end;
+                }
+            }
+        
+        
+        &__text:first-child {
+                margin-bottom: 12px;
+                font-size: 26px;
+                line-height: 1.15;
+        
+                @media screen and (max-width:1199px) {
+                    max-width: 340px;
+        
+                }
+            }
+        &__text:nth-child(2){
+            font-size: 58px;
+            line-height: 1.14;
+            letter-spacing: 0.06em;
+
+            @media screen and (max-width:1199px) {
+                    max-width: 340px;
+            
+                }
+        }
+
+        &__tel-text{
+            font-size: 16px;
+            letter-spacing: 0.02em;
+        }
+
+        &__copyright-box {
+            display: flex;
+            justify-content: center;
+            padding-top: 8px;
+
+            font-size: 14px;
+            line-height: 186%;
+            letter-spacing: 0.02em;
+        }
+
+
+        &__copyright-text:first-child {
+            margin-right:4px;
+
+        }
+    }
+}
+
+@media screen  and ( min-width:1200px){
+        .footer {
+            &__text:first-child {
+                    margin-bottom: 16px;
+                    font-size: 26px;
+                    line-height: 1.15;
+                    letter-spacing: 0.04em;
+        }
+
+            &__text:nth-child(2){
+                font-size: 58px;
+                line-height: 1.14;
+                letter-spacing: 0.06em;
+            }
+        
+            &__tel-text{
+                font-size: 16px;
+                letter-spacing: 0.02em;
+            }
+
+            &__tel-link {
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+    }
+}
