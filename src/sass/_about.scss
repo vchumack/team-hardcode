@@ -1,6 +1,17 @@
 .section{
     background-color: $color-bg-footer-advantages;
 
+    @media screen and (min-width: 1200px) {
+            background-image: url('../img/03about/about-bg-pc.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 50% 236px;
+            @media screen and (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx),
+            (-webkit-min-device-pixel-ratio: 2) {
+                background-image: url('../img/03about/about-bg-pc@2x.png');
+            }
     
         }
 
