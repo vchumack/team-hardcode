@@ -1,19 +1,20 @@
 .about{
     background-color: $color-bg-footer-advantages;
-
-    @media screen and (min-width: 1200px) {
-            background-image: url('../img/03about/about-bg-pc.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: 50% 236px;
-            @media screen and (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx),
-            (-webkit-min-device-pixel-ratio: 2) {
-                background-image: url('../img/03about/about-bg-pc@2x.png');
+        @media screen and (min-width: 1200px) {
+                background-image: url('../img/03about/about-bg-pc.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 50% 236px;
+        
+                @media screen and (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx),
+                (-webkit-min-device-pixel-ratio: 2) {
+                    background-image: url('../img/03about/about-bg-pc@2x.png');
+                }
+        
             }
-    
-        }
+ 
 
     &__title {
             color: $text-brand;
@@ -58,9 +59,12 @@
             }
 
         }
-                        
-
-        
+            
+    @media screen and (min-width:768px), ( max-width:1199px){
+            &__box{
+                padding-left:16px;
+            }
+            }
         
     }
 
@@ -128,13 +132,20 @@
                 margin-bottom: 16px;
             }
         }
+
+         
         
         &__box {
             
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             
             
+        }
+        &__picture-box {
+            @media screen and ( max-width:1199px){
+                padding-left:16px;
+            }
         }
 
         &__picture {
@@ -145,12 +156,13 @@
     
         &__text-description {
             padding-right: 0;
+            padding-right: 18px;
             margin-bottom:40px;
 
             font-size: 14px;
             font-weight: 500;
             line-height: 1.76;
-            letter-spacing: 0.04em;
+            
         }
     }
 
@@ -167,6 +179,7 @@
 @media screen and (min-width:1200px) {
 
     .about {
+        
         
 
         &__title {
@@ -200,7 +213,8 @@
             padding-top: 90px;
              
             margin-bottom: 40px;
-            font-size: 16px;   
+            font-size: 16px;  
+            letter-spacing: 0.04em;
              
          }
          
