@@ -1,16 +1,28 @@
+.container {
+   outline: 1px solid teal;
+}
+
 .advantages {
    background-color: $color-bg-footer-advantages;
 
 }
 
 .advantages__list {
+
+
+   @media screen and (max-width: 767px) {
+      padding: 0;
+   }
+
    @media screen and (min-width: 768px) {
       display: flex;
+      padding: 0;
    }
 
    @media screen and (min-width: 1200px) {
       // justify-content: space-between;
       justify-content: flex-start;
+      padding: 0;
    }
 }
 
@@ -21,7 +33,7 @@
    }
 
    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      width: 170px;
+      width: 162px;
    }
 
    @media screen and (min-width: 1200px) {
@@ -38,7 +50,7 @@
       }
 
       @media screen and (min-width: 1200px) {
-         margin-right: 132px;
+         margin-right: 128px;
       }
    }
 }
