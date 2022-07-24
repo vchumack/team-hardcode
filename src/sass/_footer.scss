@@ -1,4 +1,12 @@
 .footer {
+    @media screen and (max-width: 1199px) {
+        padding-top: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 120px;
+    }
+
     background-color: $color-bg-footer-advantages;
 
     &__container {
@@ -59,11 +67,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: background-color $transition-duration $timing-function;
+            transition: background-color $transition-duration $timing-function, transform $transition-duration $timing-function;
 
             &:hover,
             &:focus {
                 background-color: $text-brand;
+                transform: scale(1.2);
 
             }
         }

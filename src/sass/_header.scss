@@ -93,6 +93,9 @@
 
 }
 
+.header-menu__link--active {
+    color: $text-brand;
+}
 
 
 .header__btn-close {
@@ -236,7 +239,7 @@
     margin-top: 60px;
     margin-right: auto;
     margin-left: auto;
-    
+
     border-radius: 27px;
     border: 0;
 
@@ -269,7 +272,7 @@
         padding-left: 52px;
 
     }
-}        
+}
 
 .header__btn-svg {
     stroke: $text-brand;
@@ -277,7 +280,7 @@
 
     transition-duration: $transition-duration;
     transition-timing-function: $timing-function;
-    
+
 
     &:hover,
     &:focus {
@@ -515,7 +518,7 @@ picture {
 }
 
 .hero-btn__item {
-   
+
 
     z-index: 1;
 
@@ -546,7 +549,7 @@ picture {
         padding: 11px 21px;
         font-size: 14px;
         line-height: 1.28;
-    
+
     }
 
     &:hover,
@@ -626,12 +629,18 @@ picture {
     height: 18px;
     border: 0;
     border-radius: 50%;
+    transition: transform 250ms $timing-function;
 
     @media screen and (min-width: 1200px) {
         margin-top: 19px;
         width: 26px;
         height: 26px;
 
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.2);
     }
 }
 
@@ -640,11 +649,11 @@ picture {
     margin-bottom: 2px;
     width: 6px;
     height: 6px;
-    
+
     @media screen and (min-width: 1200px) {
-         margin-bottom: 1px;
-         width: 8px;
-         height: 8px;
+        margin-bottom: 1px;
+        width: 8px;
+        height: 8px;
     }
 
 }
@@ -719,7 +728,7 @@ picture {
         font-size: 46px;
         line-height: 1.15;
         top: 1px;
- 
+
     }
 
 }
@@ -750,7 +759,7 @@ picture {
     font-style: normal;
     font-size: 8px;
     line-height: 1.25;
-    
+
 
     color: $color-white;
 
@@ -808,7 +817,7 @@ picture {
     font-style: normal;
     font-size: 8px;
     line-height: 1.25;
-    
+
 
     color: $color-white;
 

@@ -1,14 +1,17 @@
-.products__container {
-   outline: 1px solid tomato;
+.products {
+   padding-top: 60px;
    padding-bottom: 60px;
+}
+
+.products__container {
 
    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      padding: 0 32px 60px;
+      padding: 0 32px;
    }
 }
 
 .products__parargah {
-   margin-top: 60px;
+   // margin-top: 60px;
    font-family: Titan One, sans-serif;
    font-size: 18px;
    line-height: 1.16;
@@ -21,7 +24,7 @@
    }
 
    @media screen and (min-width: 1200px) {
-      margin-top: 16px;
+      // margin-top: 16px;
       font-size: 30px;
       line-height: 1.13;
    }
