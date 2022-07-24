@@ -1,17 +1,9 @@
-ul {
-   list-style: none;
-   padding: 0;
-}
-
-img {
-   margin: 0;
-}
-
 .products__container {
    outline: 1px solid tomato;
+   padding-bottom: 60px;
 
    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      padding: 0 32px;
+      padding: 0 32px 60px;
    }
 }
 
@@ -70,10 +62,6 @@ img {
    @media screen and (min-width: 768px) {
       flex-wrap: nowrap;
       justify-content: center;
-      // margin-right: -8px;
-      // margin-left: -8px;
-      // padding-left: 8px;
-      // padding-right: 8px;    
 
    }
 
@@ -89,31 +77,22 @@ img {
    &__item {
       display: flex;
       flex-direction: column;
-      margin-bottom: 140px;
+
       position: relative;
       height: 489px;
       border-radius: 24px;
       z-index: 0;
 
+      @media screen and (max-width: 767px) {
+         &:not(:last-child) {
+            margin-bottom: 140px;
+         }
+      }
+
       @media screen and (min-width: 768px) {
-         // width: calc((100%-4*16) / 3);
-         // &:not(:nth-child(2)){
-         // margin-left:16px ;
-         // margin-right: 16px;
-         // }
 
-
-
-         margin-bottom: 60px;
+         // margin-bottom: 60px;
          height: 473px;
-
-
-         //    &:first-child{
-         //     margin-left: 32px;
-         //    }
-         //     &:last-child{
-         //     margin-right: 32px;
-         //    }
       }
 
       @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -125,7 +104,7 @@ img {
          width: calc((100% - 6 * 16px) / 3);
          margin: 16px;
          height: 535px;
-         margin-bottom: 261px;
+
       }
    }
 
@@ -179,57 +158,142 @@ img {
 
    &__item.range__item--pink::before {
       background-repeat: no-repeat;
+      background-size: contain;
 
       @media screen and (max-width: 767px) {
          background-image: url('../img/02products/01product-mobile.png');
+
+         @media (min-device-pixel-ratio: 2),
+         (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+
+            background-image: url('../img/02products/01product-mobile@2x.png');
+
+         }
       }
 
 
       @media screen and (min-width: 768px) and (max-width: 1199px) {
          background-image: url('../img/02products/01product-tablet.png');
 
+         @media (min-device-pixel-ratio: 2),
+         (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+
+            background-image: url('../img/02products/01product-tablet@2x.png');
+
+         }
+
       }
 
       @media screen and (min-width:1200px) {
          background-image: url('../img/02products/01product-pc.png');
+
+         @media (min-device-pixel-ratio: 2),
+         (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+
+            background-image: url('../img/02products/01product-pc@2x.png');
+
+         }
 
       }
    }
 
    &__item.range__item--brown::before {
       background-repeat: no-repeat;
+      background-size: contain;
 
       @media screen and (max-width: 767px) {
          background-image: url('../img/02products/02product-mobile.png');
+
+         @media (min-device-pixel-ratio: 2),
+         (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+
+            background-image: url('../img/02products/02product-mobile@2x.png');
+
+         }
       }
 
 
       @media screen and (min-width: 768px) and (max-width: 1199px) {
          background-image: url('../img/02products/02product-tablet.png');
 
+         @media (min-device-pixel-ratio: 2),
+         (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+
+            background-image: url('../img/02products/02product-tablet@2x.png');
+
+         }
+
+
       }
 
       @media screen and (min-width:1200px) {
          background-image: url('../img/02products/02product-pc.png');
+
+         @media (min-device-pixel-ratio: 2),
+         (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+
+            background-image: url('../img/02products/02product-pc@2x.png');
+
+         }
 
       }
    }
 
    &__item.range__item--green::before {
       background-repeat: no-repeat;
+      background-size: contain;
 
       @media screen and (max-width: 767px) {
          background-image: url('../img/02products/03product-mobile.png');
+
+         @media (min-device-pixel-ratio: 2),
+         (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+
+            background-image: url('../img/02products/03product-mobile@2x.png');
+
+         }
       }
 
 
       @media screen and (min-width: 768px) and (max-width: 1199px) {
          background-image: url('../img/02products/03product-tablet.png');
 
+         @media (min-device-pixel-ratio: 2),
+         (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+
+            background-image: url('../img/02products/03product-tablet@2x.png');
+
+         }
+
       }
 
       @media screen and (min-width:1200px) {
          background-image: url('../img/02products/03product-pc.png');
+
+         @media (min-device-pixel-ratio: 2),
+         (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+
+            background-image: url('../img/02products/03product-pc@2x.png');
+
+         }
 
       }
    }
@@ -274,8 +338,6 @@ img {
       @media screen and (min-width: 768px) {
          padding-left: 30px;
          padding-right: 30px;
-         // padding-left: 32px; Как на макете
-         // padding-right: 32px; 
          line-height: 1.76;
       }
 
@@ -312,8 +374,14 @@ img {
       margin-right: auto;
       margin-bottom: 40px;
 
+      transition: transform 250ms $timing-function;
+
       @media screen and (min-width: 1200px) {
          margin-bottom: 60px;
+      }
+
+      &:hover {
+         transform: scale(1.2) rotate(90deg);
       }
    }
 
@@ -322,12 +390,6 @@ img {
       height: 40px;
       background-image: url('../img/02products/arrow.png');
       background-size: 40px 40px;
-      opacity: 1;
-      transition: 250ms $timing-function;
 
-      &:hover {
-         transition: 250ms $timing-function;
-         opacity: 0.5;
-      }
    }
 }
