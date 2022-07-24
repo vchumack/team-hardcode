@@ -1,26 +1,20 @@
 .contacts {
   @extend .section;
   // background-color: $color-bg-footer-advantages;
-  background-image: linear-gradient(
-    to bottom,
-    $color-white 23%,
-    $color-bg-footer-advantages 23%
-  );
+  background-image: linear-gradient(to bottom,
+      $color-white 23%,
+      $color-bg-footer-advantages 23%);
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    background-image: linear-gradient(
-      to bottom,
-      $color-white 41%,
-      $color-bg-footer-advantages 41%
-    );
+    background-image: linear-gradient(to bottom,
+        $color-white 41%,
+        $color-bg-footer-advantages 41%);
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(
-      to bottom,
-      $color-white 21.5%,
-      $color-bg-footer-advantages 21.5%
-    );
+    background-image: linear-gradient(to bottom,
+        $color-white 21.5%,
+        $color-bg-footer-advantages 21.5%);
   }
 
   &__list {
@@ -131,6 +125,9 @@
   }
 
   &__btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
     padding: 14px 35px;
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0);
@@ -159,13 +156,20 @@
   &__btn--accent {
     color: $color-white;
     background-color: $text-brand;
-    transition: color 250ms $timing-function;
+    transition: color 250ms $timing-function, background-color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      background-color: $button-hover;
+      color: $text-brand;
+    }
   }
 
   &__btn--notuse {
     color: $text-brand;
     background-color: $color-white;
     padding: 14px 49px;
+    transition: background-color 250ms $timing-function;
 
     &:hover,
     &:focus {
