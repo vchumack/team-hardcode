@@ -1,40 +1,41 @@
-.about{
+.about {
     background-color: $color-bg-footer-advantages;
-        @media screen and (min-width: 1200px) {
-                background-image: url('../img/03about/about-bg-pc.png');
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: 50% 236px;
-        
-                @media screen and (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx),
-                (-webkit-min-device-pixel-ratio: 2) {
-                    background-image: url('../img/03about/about-bg-pc@2x.png');
-                }
-        
-            }
- 
+
+    @media screen and (min-width: 1200px) {
+        background-image: url('../img/03about/about-bg-pc.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 236px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx),
+        (-webkit-min-device-pixel-ratio: 2) {
+            background-image: url('../img/03about/about-bg-pc@2x.png');
+        }
+
+    }
+
 
     &__title {
-            color: $text-brand;
+        color: $text-brand;
 
-            margin-bottom:32px;
-    
-            &-label {
-                margin-bottom: 15px;
+        margin-bottom: 32px;
 
-                color: $text-secondary;
-            }
+        &-label {
+            margin-bottom: 15px;
+
+            color: $text-secondary;
         }
     }
+}
 
 .about {
 
     &__text-box {
-            margin-top: 45px;
-            
-        }
+        margin-top: 45px;
+
+    }
 
     &__text-description {
         margin-bottom: 20px;
@@ -45,42 +46,43 @@
         line-height: 1.62;
         letter-spacing: 0;
 
-        @media screen and (max-width: 767px){
-        background-image: url('../img/03about/about-bg-mobile.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        
-        @media screen and (min-device-pixel-ratio: 2),
+        @media screen and (max-width: 767px) {
+            background-image: url('../img/03about/about-bg-mobile.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            @media screen and (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx),
             (-webkit-min-device-pixel-ratio: 2) {
-                background-image:url('../img/03about/about-bg-mobile@2x.png');
+                background-image: url('../img/03about/about-bg-mobile@2x.png');
             }
 
         }
-            
-    @media screen and (min-width:768px), ( max-width:1199px){
-            &__box{
-                padding-left:16px;
+
+        @media screen and (min-width:768px),
+        (max-width:1199px) {
+            &__box {
+                padding-left: 16px;
             }
-            }
-        
+        }
+
     }
 
-    
+
     &__text:first-child {
-            margin-bottom: 40px;
-        }
-    
+        margin-bottom: 40px;
+    }
+
     &__text:nth-child(2) {
-            margin-bottom: 10px;
-        }
+        margin-bottom: 10px;
+    }
 
     &__text:not(:first-child) {
-        color:$text-light;
+        color: $text-light;
     }
-      
+
 }
 
 .about__btn {
@@ -88,35 +90,34 @@
     padding-top: 13px;
     padding-bottom: 13px;
     padding-left: 37px;
-    padding-right:37px;
-    
+    padding-right: 37px;
+
     border: 1px transparent;
     border-radius: 38px;
     font-size: 16px;
-    font-weight:700;
+    font-weight: 700;
 
     background-color: $color-white;
     color: $text-brand;
 
     transition: background-color $transition-duration $timing-function,
-            color $transition-duration $timing-function;
+        color $transition-duration $timing-function;
 
     &-text {
-            margin-right: 13px;
-        }
-    
+        margin-right: 13px;
+    }
 
-    &-icon{
-        fill:none;
-        stroke:$text-brand;
-        }
+
+    &-icon {
+        fill: none;
+        stroke: $text-brand;
+    }
 
     &:hover,
-    &:focus{
-        background-color:$button-hover
-        
+    &:focus {
+        background-color: $button-hover
     }
-    
+
 }
 
 
@@ -133,18 +134,19 @@
             }
         }
 
-         
-        
+
+
         &__box {
-            
+
             display: flex;
             justify-content: flex-start;
-            
-            
+
+
         }
+
         &__picture-box {
-            @media screen and ( max-width:1199px){
-                padding-left:16px;
+            @media screen and (max-width:1199px) {
+                padding-left: 16px;
             }
         }
 
@@ -152,25 +154,25 @@
             flex-shrink: 0;
         }
 
-         
-    
+
+
         &__text-description {
             padding-right: 0;
             padding-right: 18px;
-            margin-bottom:40px;
+            margin-bottom: 40px;
 
             font-size: 14px;
             font-weight: 500;
             line-height: 1.76;
-            
+
         }
     }
 
 
     .about__text-box {
-        width:calc((100% - 1*32px) /2 );
+        width: calc((100% - 1*32px) /2);
         margin-left: 32px;
-        margin-top:0;
+        margin-top: 0;
     }
 
 }
@@ -179,45 +181,45 @@
 @media screen and (min-width:1200px) {
 
     .about {
-        
-        
+
+
 
         &__title {
             margin-bottom: 60px;
         }
 
-    
 
-         &__box {
-            
+
+        &__box {
+
             //  align-items: center;
-             justify-content: flex-start;
-    
-         }
+            justify-content: flex-start;
 
-         &__picture-box {
+        }
+
+        &__picture-box {
             margin-right: 99px;
-         }
-    
-    
-         &__text-box {
-            margin-left:0;
-            
+        }
+
+
+        &__text-box {
+            margin-left: 0;
+
             width: calc((100% - 1*99px) /2);
             padding-right: 71px;
-            
-            }
-         
-    
-         &__text-description {
+
+        }
+
+
+        &__text-description {
             padding-top: 90px;
-             
+
             margin-bottom: 40px;
-            font-size: 16px;  
+            font-size: 16px;
             letter-spacing: 0.04em;
-             
-         }
-         
+
+        }
+
         &__text:first-child {
             margin-bottom: 32px;
         }
@@ -227,16 +229,16 @@
         }
 
         &__btn {
-        
-        
-        padding-left: 37px;
-        padding-right: 37px;
-        
-        border: 1px transparent;
-        border-radius: 40px;
-        font-size: 16px;   
+
+
+            padding-left: 37px;
+            padding-right: 37px;
+
+            border: 1px transparent;
+            border-radius: 40px;
+            font-size: 16px;
+        }
+
     }
-    
-    }
-   
+
 }
