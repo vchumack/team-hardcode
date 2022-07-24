@@ -1,0 +1,30 @@
+.gallery {
+   @media screen and (max-width: 767px) {
+      background-image: linear-gradient(to bottom, #fff5f6 20%, #fff 20%);
+   }
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+      background-image: linear-gradient(to bottom, #fff5f6 60%, #fff 60%);
+   }
+
+   @media screen and (min-width:1200px) {
+      background-image: linear-gradient(to bottom, #fff5f6 23%, #fff 20%);
+   }
+}
+
+
+.about__picture-box {
+   display: flex;
+}
+
+.about__picture {
+   padding-left: 0;
+   padding-right: 0;
+   padding-top: 0;
+
+   @media screen and (min-width: 1200px) {
+      padding-left: 93px;
+      padding-right: 94px;
+   }
+
+}
