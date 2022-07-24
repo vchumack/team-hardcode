@@ -1,6 +1,27 @@
 .contacts {
   @extend .section;
-  background-color: $color-white;
+  // background-color: $color-bg-footer-advantages;
+  background-image: linear-gradient(
+    to bottom,
+    $color-white 23%,
+    $color-bg-footer-advantages 23%
+  );
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-image: linear-gradient(
+      to bottom,
+      $color-white 41%,
+      $color-bg-footer-advantages 41%
+    );
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+      to bottom,
+      $color-white 21.5%,
+      $color-bg-footer-advantages 21.5%
+    );
+  }
 
   &__list {
     margin-top: 0;
@@ -16,6 +37,8 @@
 
   &__item {
     font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
     font-size: 12px;
     line-height: 1.5;
     padding: 40 32;
@@ -33,10 +56,12 @@
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-weight: 500;
       font-size: 14px;
     }
 
     @media screen and (min-width: 1200px) {
+      font-weight: 500;
       font-size: 16px;
     }
   }
@@ -47,11 +72,20 @@
     text-transform: uppercase;
     background-color: $color-coffee-card;
     border-radius: 6px;
-    padding: 4px 17px;
+    padding: 4px 25px;
+
+    @media screen and (min-width: 768px) {
+      padding: 8px 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 8px 17px;
+    }
   }
 
   &__type--green {
     background-color: $color-milkshake-card;
+    padding: 3, 5px 28px;
   }
 
   &__city {
@@ -96,31 +130,14 @@
     color: $text-secondary;
   }
 
-  &__add {
-    margin-top: 24px;
-    color: $text-light;
-
-    &:not(:last-child) {
-      margin-top: 24px;
-    }
-
-    @media screen and (min-width: 768px) {
-      margin-top: 32px;
-      color: $text-light;
-    }
-
-    &:hover,
-    &:focus {
-      color: $text-brand;
-    }
-  }
-
   &__btn {
     padding: 14px 35px;
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 22px;
     margin-bottom: 10px;
+    transition: background-color 250ms $timing-function,
+      color 250ms $timing-function;
 
     @media screen and (min-width: 768px) {
       display: block;
@@ -131,10 +148,10 @@
     }
 
     @media screen and (min-width: 1200px) {
-      display: block;
-      list-style: none;
-      justify-content: center;
-      align-items: center;
+      // display: block;
+      // list-style: none;
+      // justify-content: center;
+      // align-items: center;
       margin-right: 12px;
     }
   }
@@ -142,23 +159,60 @@
   &__btn--accent {
     color: $color-white;
     background-color: $text-brand;
+    transition: color 250ms $timing-function;
   }
 
   &__btn--notuse {
     color: $text-brand;
     background-color: $color-white;
+    padding: 14px 49px;
 
     &:hover,
     &:focus {
       background-color: rgba(236, 235, 235, 1);
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 14px 35px;
+    }
+  }
+}
+
+.address {
+  margin-top: 24px;
+  color: $text-light;
+
+  &:not(:last-child) {
+    margin-top: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+    color: $text-light;
+  }
+
+  &__mail {
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $text-brand;
+    }
+  }
+
+  &__tel {
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $text-brand;
     }
   }
 }
 
 .contacts-location {
   display: flex;
-  margin: 0 auto;
-  margin-top: 32px;
+  margin-top: 48px;
   justify-content: center;
   flex-direction: column;
   text-align: center;
@@ -167,6 +221,7 @@
   @media screen and (min-width: 767px) {
     display: flex;
     flex-direction: row;
+    margin-top: 60px;
   }
 }
 
