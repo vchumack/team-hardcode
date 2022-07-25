@@ -62,6 +62,9 @@ body {
     font-size: 14px;
     font-weight: 400;
 
+    &.is-open-modal {
+        overflow: hidden;
+    }
 }
 
 .section {
