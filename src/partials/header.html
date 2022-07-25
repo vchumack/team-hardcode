@@ -23,12 +23,54 @@
                     </svg>
                 </button>
 
-                <button class="header__btn-outside" type="button"><span class="header__btn-text">Buy now</span><svg
+                <button class="header__btn-outside" type="button" data-modal-open><span class="header__btn-text">Buy now</span><svg
                         class="header__btn-svg" width="5" height="8">
                         <use href="./img/symbol-defs.svg#icon-arrow"></use>
                     </svg></button>
             </div>
+<!-- ======================modal============================ -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal__btn" data-modal-close>
+            <svg class="modal__btn--img">
+                <use href="./img/symbol-defs.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form class="form">
+            <b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
+            <label class="form__label">
+                <span class="form__name">Your name</span>
 
+                <input class="form__input" type="text" name="username">
+            </label>
+
+            <label class="form__label">
+                <span class="form__name">Your tel</span>
+
+                <input class="form__input" type="text" name="phone">
+            </label>
+
+            <label class="form__label">
+                <span class="form__name">Your E-mail</span>
+
+                <input class="form__input" type="text" name="email">
+            </label>
+
+            <label class="form__label">
+                <span class="form__name">Your order</span>
+
+                <input class="form__input" type="text" name="Your order">
+            </label>
+
+
+            <button class="form__btn" type="submit">Отправить</button>
+        </form>
+
+    </div>
+
+</div>
+
+<!-- ============================modal end============================= -->
 
             <div class="menu-mobil is-open" data-menu>
 
@@ -39,7 +81,7 @@
                     </svg>
                 </button>
 
-                <button class="header__btn" type="button">
+                <button class="header__btn" type="button" data-modal-open-2>
                     <a class="header__btn-link" href="#">
                         <span class="header__btn-text">Buy now</span>
                         <svg class="header__btn-svg" width="5" height="8">
