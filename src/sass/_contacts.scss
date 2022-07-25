@@ -2,19 +2,19 @@
   @extend .section;
   // background-color: $color-bg-footer-advantages;
   background-image: linear-gradient(to bottom,
-      $color-white 23%,
-      $color-bg-footer-advantages 23%);
+      $color-white 22%,
+      $color-bg-footer-advantages 22%);
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     background-image: linear-gradient(to bottom,
-        $color-white 41%,
-        $color-bg-footer-advantages 41%);
+        $color-white 46%,
+        $color-bg-footer-advantages 46%);
   }
 
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(to bottom,
-        $color-white 21.5%,
-        $color-bg-footer-advantages 21.5%);
+        $color-white 19.5%,
+        $color-bg-footer-advantages 19.5%);
   }
 
   &__list {
@@ -171,6 +171,7 @@
     }
   }
 
+
   &__btn--notuse {
     color: $text-brand;
     background-color: $color-white;
@@ -246,5 +247,5 @@
 .btn-svg--accent {
   stroke: $color-white;
 
-
+  transition: stroke 250ms $timing-function;
 }
