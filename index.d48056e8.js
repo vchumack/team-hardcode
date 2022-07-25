@@ -1,2 +1,0 @@
-google.maps.event.addDomListener(window,"load",(function(){var e={zoom:2,center:new google.maps.LatLng(40.67,-73.94),styles:[{stylers:[{hue:"#dd0d0d"}]},{featureType:"road",elementType:"labels",stylers:[{visibility:"off"}]},{featureType:"road",elementType:"geometry",stylers:[{lightness:100},{visibility:"simplified"}]}]},o=document.querySelector(".js-map"),t=new google.maps.Map(o,e);new google.maps.Marker({position:new google.maps.LatLng(40.67,-73.94),map:t,title:"Snazzy!"})}));
-//# sourceMappingURL=index.d48056e8.js.map
