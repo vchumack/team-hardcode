@@ -162,6 +162,12 @@
     &:focus {
       background-color: $button-hover;
       color: $text-brand;
+      stroke: $text-brand;
+    }
+
+    &:hover .btn-svg--accent,
+    &:focus .btn-svg--accent {
+      stroke: $text-brand;
     }
   }
 
@@ -239,4 +245,6 @@
 
 .btn-svg--accent {
   stroke: $color-white;
+
+
 }
