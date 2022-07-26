@@ -93,9 +93,6 @@
 
 }
 
-.header-menu__link--active {
-    color: $text-brand;
-}
 
 
 .header__btn-close {
@@ -234,44 +231,42 @@
     }
 }
 
-.header__btn {
+.header__btn-link {
     display: block;
+    padding-top: 13px;
+    padding-right: 50px;
+    padding-bottom: 13px;
+    padding-left: 63px;
+
     margin-top: 60px;
     margin-right: auto;
     margin-left: auto;
-
+    max-width: 209px;
+    
     border-radius: 27px;
     border: 0;
-
+    
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     background-color: hsl(0deg 0% 100%);
     color: $text-brand;
-
+    
     transition-duration: $transition-duration;
     transition-timing-function: $timing-function;
-
-    &:hover,
-    &:focus {
-        color: $text-brand;
-        background-color: $button-hover;
-    }
-}
-
-.header__btn-link {
-    display: block;
-    padding-top: 14px;
-    padding-right: 50px;
-    padding-bottom: 14px;
-    padding-left: 63px;
 
     @media screen and (min-width: 768px) {
         padding-right: 42px;
         padding-left: 52px;
+        max-width: 186px;
 
     }
+        &:hover,
+        &:focus {
+            color: $text-brand;
+            background-color: $button-hover;
+        }
 }
 
 .header__btn-svg {
