@@ -93,6 +93,9 @@
 
 }
 
+.header-menu__link--active {
+    color: $text-brand;
+}
 
 
 .header__btn-close {
@@ -242,17 +245,17 @@
     margin-right: auto;
     margin-left: auto;
     max-width: 209px;
-    
+
     border-radius: 27px;
     border: 0;
-    
+
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     background-color: hsl(0deg 0% 100%);
     color: $text-brand;
-    
+
     transition-duration: $transition-duration;
     transition-timing-function: $timing-function;
 
@@ -262,11 +265,12 @@
         max-width: 186px;
 
     }
-        &:hover,
-        &:focus {
-            color: $text-brand;
-            background-color: $button-hover;
-        }
+
+    &:hover,
+    &:focus {
+        color: $text-brand;
+        background-color: $button-hover;
+    }
 }
 
 .header__btn-svg {
